@@ -1,5 +1,6 @@
 * {
   margin: 0;
+  font-family: "Gotham", sans-serif;
 }
 
 .nav__notif {
@@ -62,5 +63,50 @@
 }
 
 .family > img {
-  width: fit-content;
+  /* width: fit-content; */
+  max-width: 100%;
+}
+
+@media (max-width: 1440px) {
+  .family > img {
+    width: 1440px;
+  }
+
+  .family__body-left {
+    margin: 10px 170px;
+  }
+
+  .family__learn {
+    max-width: 240px;
+    height: 46px;
+    border-radius: 30px;
+    display: flex;
+  }
+}
+
+@media (max-width: 2560px) {
+  .family > img {
+    width: 2560px;
+  }
+}
+
+.family__body {
+  display: flex;
+}
+
+.family__learn {
+  margin-top: 20px;
+  background-color: whitesmoke;
+  display: flex;
+  align-content: flex-start;
+  justify-content: center;
+  align-items: center;
+}
+
+.family__learn > span {
+  margin: 5px 10px;
+  font-weight: 600;
+  font-size: 18.6px;
+  color: #f40000;
+  font-family: "Gotham", sans-serif;
 }
